@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Symfony & Vuejs{% endblock %}</title>
+    {% block stylesheets %}
+        <!-- vendors css -->
+        {#<link rel="stylesheet" href="{{ asset('build/vendors.css') }}"/>#}
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="{{ asset('build/css/main.css') }}">
+    {% endblock %}
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}
+    <!--vendors js-->
+    {#<script src="{{ asset('build/manifest.js') }}"></script>#}
+    {#<script src="{{ asset('build/vendors.js') }}"></script>#}
+
+    <!-- here you link to the specific JS files needed by the current page -->
+    <script src="{{ asset('build/js/main.js') }}"></script>
+
+{% endblock %}
+</body>
+</html>
