@@ -20,8 +20,8 @@ Encore
     .enableVueLoader()
 
     // uncomment to define the assets of the project
-    .addEntry('js/main', './assets/vuejs/main.js')
-    .addStyleEntry('css/main', './assets/scss/main.scss')
+    .addEntry('main', './assets/vuejs/main.js')
+    .addStyleEntry('css/index', './assets/scss/index.scss')
 
     // .addStyleEntry('vendors', [])
 
