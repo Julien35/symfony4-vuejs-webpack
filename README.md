@@ -13,7 +13,7 @@
 
 ### Development
 Launch javascript server, symfony server
-* ```$ yarn dev or dev-live for HMR```
+* ```$ yarn dev or dev-server-hot for HMR```
 * ```$ bin/console server:run```
 
 ##### sources
