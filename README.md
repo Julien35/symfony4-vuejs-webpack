@@ -13,8 +13,8 @@
 
 ### Development
 Launch javascript server, symfony server
+* ```$ yarn dev or dev-live for HMR```
 * ```$ bin/console server:run```
-* ```$ yarn dev```
 
 ##### sources
 * https://github.com/symfony/webpack-encore/tree/master/fixtures/vuejs
