@@ -11,6 +11,10 @@ Encore
 
     // uncomment if you use Sass/SCSS files
     .enableSassLoader()
+    // parameters are not mandatory, only if webpack build is slow with bootstrap (http://symfony.com/doc/current/frontend/encore/bootstrap.html)
+    // .enableSassLoader(function(sassOptions) {}, {
+    //     resolveUrlLoader: false,
+    // })
 
     .enableSourceMaps(!Encore.isProduction())
 
@@ -20,15 +24,16 @@ Encore
     .enableVueLoader()
 
     // uncomment to define the assets of the project
-    .addEntry('main', './assets/vuejs/main.js')
-    .addStyleEntry('css/index', './assets/scss/index.scss')
-
-    // .addStyleEntry('vendors', [])
+    .addEntry('index',
+        [
+            './assets/vuejs/main.js',
+            './assets/scss/index.scss'
+        ])
 
     // this creates a 'vendor.js' file with jquery and the bootstrap JS module
     // these modules will *not* be included in page1.js or page2.js anymore
     // .createSharedEntry('vendors', [
-    //     'vue'
+    //     'bootstrap'
     // ])
 ;
 
